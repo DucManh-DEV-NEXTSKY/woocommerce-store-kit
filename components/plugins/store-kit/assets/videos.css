@@ -1,0 +1,71 @@
+/* TikTok video cards and player. Store Kit video presentation. Tokens come from the child theme. */
+
+/* Product page block */
+.sk-videos { clear: both; margin: var(--section, 48px) auto 0; width: calc(100% - 2 * var(--gutter, 20px)); max-width: var(--theme-normal-container-max-width, 1290px); }
+.sk-videos h2 { margin: 0 0 var(--head-gap, 24px); }
+.sk-videos__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 220px)); gap: var(--grid-gap, 12px); }
+
+/* Lists of reels */
+.sk-reels { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--grid-gap, 22px); }
+.sk-reels--shelf { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+
+/* Card: poster, caption under it, then the product/category/Zalo row. No overlay text, no decoration that reads as a seek bar. */
+.sk-reel { margin: 0; display: flex; flex-direction: column; gap: 10px; min-width: 0; color: var(--c-heading, #2e1f1f); }
+.sk-reel__media { position: relative; display: block; aspect-ratio: 9 / 16; border-radius: var(--r-img, 20px); overflow: hidden; background: var(--c-tile, #fbf6f0); }
+.sk-reel__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.sk-reel__media:hover .sk-reel__img { transform: scale(1.03); }
+.sk-reel__fallback { position: absolute; inset: 0; background: var(--c-tile, #fbf6f0); }
+.sk-reel__play { position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px 0 0 -28px; border-radius: 50%; background: #fff; display: grid; place-items: center; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18); }
+.sk-reel__play svg { width: 22px; height: 22px; margin-left: 3px; fill: var(--c-heading, #2e1f1f); }
+.sk-reel__media:focus-visible { outline: 2px solid var(--c-primary, #b3232b); outline-offset: 3px; }
+.sk-reel__ext { position: absolute; left: 10px; bottom: 10px; padding: 4px 10px; border-radius: var(--r-pill, 24px); background: rgba(0, 0, 0, 0.62); color: #fff; font-size: 12px; font-weight: 500; line-height: 1.4; }
+.sk-reel__caption { display: grid; gap: 2px; }
+.sk-reel__title { font-size: 15px; font-weight: 500; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.sk-reel__source { font-size: 12px; color: var(--c-muted, #6b6b6b); }
+
+.sk-tie { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 10px; align-items: center; padding-top: 10px; border-top: 1px solid var(--c-border, #e9e0d9); text-decoration: none; color: inherit; line-height: 1.3; }
+.sk-tie img, .sk-tie__icon { width: 40px; height: 40px; object-fit: contain; border-radius: min(8px, var(--r-img, 16px)); background: #fff; border: 1px solid var(--c-border, #e9e0d9); }
+.sk-tie__icon { display: grid; place-items: center; color: var(--c-primary, #b3232b); background: var(--c-soft, #f7e6e4); border: 0; }
+.sk-tie__icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.sk-tie--zalo .sk-tie__icon { background: #e6f0ff; color: #0068ff; }
+.sk-tie b { display: block; font-size: 14px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sk-tie:hover b { text-decoration: underline; }
+.sk-tie__price { font-size: 14px; font-weight: 600; color: var(--c-heading, #2e1f1f); }
+.sk-tie__price del { opacity: 0.6; font-weight: 400; }
+.sk-tie__note { font-size: 13px; color: var(--c-muted, #6b6b6b); }
+
+/* Full-screen player */
+html.sk-player-open { overflow: hidden; }
+.sk-player { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgba(0, 0, 0, 0.92); color: #fff; overflow-x: hidden; overflow-y: auto; overscroll-behavior: contain; }
+.sk-player::backdrop { background: transparent; }
+.sk-player__stage { box-sizing: border-box; min-height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 64px 16px calc(16px + env(safe-area-inset-bottom)); }
+.sk-player__frame { width: min(420px, 100%, calc((100dvh - 150px) * 9 / 16)); aspect-ratio: 9 / 16; background: #000; border-radius: var(--r-img, 16px); overflow: hidden; flex: none; }
+.sk-player__frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.sk-player__bar { width: min(420px, 100%); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.sk-player__sound { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--r-pill, 24px); border: 0; background: #fff; color: var(--c-heading, #2e1f1f); font: inherit; font-size: 15px; font-weight: 500; cursor: pointer; }
+.sk-player__sound svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+.sk-player__sound[aria-pressed="true"] { background: rgba(255, 255, 255, 0.14); color: #fff; }
+.sk-player__open { color: #fff; font-size: 14px; font-weight: 500; text-underline-offset: 3px; }
+.sk-player__error { width: min(420px, 100%); margin: 0; padding: 10px 14px; border-radius: var(--r-img, 16px); background: rgba(255, 255, 255, 0.12); font-size: 14px; }
+.sk-player__close { position: fixed; top: 12px; right: 12px; z-index: 1; width: 44px; height: 44px; min-height: 0; padding: 0; border-radius: 50%; border: 0; background: rgba(255, 255, 255, 0.14); color: #fff; display: grid; place-items: center; cursor: pointer; }
+.sk-player__close:hover { background: rgba(255, 255, 255, 0.24); }
+.sk-player__close svg { width: 22px; height: 22px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .sk-reels:not(.sk-reels--shelf) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  /* Swipe row: 2 cards visible + a peek of the third */
+  .sk-reels, .sk-reels--shelf { display: grid; grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 42%; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-inline: calc(-1 * var(--gutter, 20px)); padding-inline: var(--gutter, 20px); scroll-padding-inline: var(--gutter, 20px); }
+  .sk-reels::-webkit-scrollbar { display: none; }
+  .sk-reel { scroll-snap-align: start; }
+  /* Video page: plain 2-column grid instead of a swipe row */
+  .sk-reels.sk-reels--page { grid-auto-flow: row; grid-template-columns: 1fr 1fr; grid-auto-columns: auto; row-gap: 24px; overflow: visible; margin-inline: 0; padding-inline: 0; }
+  .sk-reel__play { width: 44px; height: 44px; margin: -22px 0 0 -22px; }
+  .sk-reel__play svg { width: 18px; height: 18px; }
+  .sk-reel__title { font-size: 14px; }
+  .sk-tie { grid-template-columns: 32px minmax(0, 1fr); gap: 8px; }
+  .sk-tie img, .sk-tie__icon { width: 32px; height: 32px; }
+  .sk-tie b, .sk-tie__price { font-size: 13px; }
+  .sk-tie__note { font-size: 12px; }
+}

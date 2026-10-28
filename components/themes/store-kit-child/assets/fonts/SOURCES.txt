@@ -1,0 +1,38 @@
+Unmodified upstream fonts. Each family is distributed under its adjacent SIL OFL 1.1 license.
+Source repository: https://github.com/google/fonts
+Retrieved: 2026-10-28
+
+bricolage.ttf
+Upstream: https://github.com/google/fonts/blob/main/ofl/bricolagegrotesque/BricolageGrotesque[opsz,wdth,wght].ttf
+Git blob: 9a4ca271ff84357bb8f8830ce71b85ea3571f731
+SHA256: 413e7357809ddd12fd80a96a8a396de0e401638d4acd3cb3e37532f0472ac682
+
+OFL-BricolageGrotesque.txt
+Upstream: https://github.com/google/fonts/blob/main/ofl/bricolagegrotesque/OFL.txt
+Git blob: a397658a5c4ab27c349964553b7caca61a4346f6
+SHA256: 4b5a7d8f37f5602621c8a8d7358a6a2e71317e6c231c661e15aef0275d3e07ba
+
+bevietnampro-700.ttf
+Upstream: https://github.com/google/fonts/blob/main/ofl/bevietnampro/BeVietnamPro-Bold.ttf
+Git blob: 52aadc6da089ed8ae647b5e0c8cac4f8b3e24750
+SHA256: 7f738fe5c43c8872807b20e2d30d42163618de8a4daf7f48a939adac32c16847
+
+bevietnampro-500.ttf
+Upstream: https://github.com/google/fonts/blob/main/ofl/bevietnampro/BeVietnamPro-Medium.ttf
+Git blob: d6deb87afdd7ddf003f3d0ab1070ab9df1df0724
+SHA256: b60832bfa0fcd015158112c64d7e3fdad3b0c6287d1823f85a3103636e845268
+
+bevietnampro-400.ttf
+Upstream: https://github.com/google/fonts/blob/main/ofl/bevietnampro/BeVietnamPro-Regular.ttf
+Git blob: dfa34c09fe2bae0626e00aa3265af2119345c27b
+SHA256: cd1ef6e9d7db28ad5cdb88a65ccbe693870e60d340b791f349d248342b4fe4c3
+
+bevietnampro-600.ttf
+Upstream: https://github.com/google/fonts/blob/main/ofl/bevietnampro/BeVietnamPro-SemiBold.ttf
+Git blob: b25bad31fe8984d5db6cbce61a23323bbb68bc97
+SHA256: bd8e27eb02720b9d91e59e4f10a90878643219f25ce6a8d9a4f06a8a88d3bb71
+
+OFL-BeVietnamPro.txt
+Upstream: https://github.com/google/fonts/blob/main/ofl/bevietnampro/OFL.txt
+Git blob: 9e2c1177b1e7b9b2f63e122d37f8c21bc5dddc65
+SHA256: 6b7f8f73609a25ea78c891e34cf37b06f8a676b7ea986e941e43b009110f2a85

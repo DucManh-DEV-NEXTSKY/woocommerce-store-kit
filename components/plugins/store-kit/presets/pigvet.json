@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "pigvet",
+  "name": "Cửa hàng thú y — không kèm danh tính doanh nghiệp",
+  "settings": {
+    "hero_title": "Tìm hiểu trước khi chọn sản phẩm chăm sóc vật nuôi.",
+    "hero_lede": "Khám phá danh mục và đọc thông tin trên nhãn. Vấn đề sức khỏe và điều trị cần được bác sĩ thú y có chuyên môn tư vấn.",
+    "hero_badge": "Sản phẩm · Vật tư · Thông tin",
+    "announce_before": "Cần thông tin sản phẩm?",
+    "announce_after": "Liên hệ cửa hàng; tư vấn điều trị cần người có chuyên môn phù hợp.",
+    "video_section_limit": 8,
+    "posts_count": 5,
+    "sections": {
+      "van-de": {"enabled": true, "title": "Danh mục chăm sóc vật nuôi", "lede": "Danh mục giúp tìm sản phẩm, không thay thế chẩn đoán hoặc chỉ định điều trị.", "eyebrow": "Khám phá", "link_text": "", "link_url": ""},
+      "san-pham": {"enabled": true, "title": "Tìm hiểu sản phẩm", "lede": "Đọc nhãn của nhà sản xuất và hỏi người có chuyên môn khi cần.", "eyebrow": "", "link_text": "Xem tất cả sản phẩm", "link_url": "/shop/"},
+      "video": {"enabled": true, "title": "Thông tin qua video", "lede": "Nội dung tham khảo không thay thế tư vấn của bác sĩ thú y.", "eyebrow": "", "link_text": "Xem tất cả video", "link_url": "/videos/"},
+      "kien-thuc": {"enabled": true, "title": "Đọc trước khi lựa chọn", "lede": "Chủ cửa hàng cần rà soát chuyên môn cho bài viết trước khi xuất bản.", "eyebrow": "Kiến thức", "link_text": "Tất cả bài viết", "link_url": "/knowledge/"},
+      "dat-hang": {"enabled": true, "title": "Trước khi đặt hàng", "lede": "Sản phẩm thuộc diện kê đơn không được mua trực tuyến.", "eyebrow": "", "link_text": "", "link_url": ""}
+    },
+    "steps": [
+      {"title": "Đọc thông tin trên nhãn", "description": "Kiểm tra mô tả và hướng dẫn của nhà sản xuất. Không suy ra liều dùng hay cách điều trị từ sản phẩm minh họa."},
+      {"title": "Kiểm tra điều kiện mua", "description": "Hỏi bác sĩ thú y khi cần. Sản phẩm bị hạn chế không thể mua trực tuyến."},
+      {"title": "Xem chính sách cửa hàng", "description": "Kiểm tra tình trạng hàng, giao nhận và phương thức thanh toán trước khi đặt."}
+    ]
+  },
+  "design": {"primary": "#16734b", "primary_hover": "#105638", "heading": "#16372a", "text": "#31463a", "muted": "#697a6d", "tile": "#ffffff", "soft": "#eff6e9", "deep": "#123c2b", "border": "#dce8d4", "accent": "#e6b740", "sale": "#b33f32", "font_heading": "system", "font_body": "system", "radius_image": 20, "radius_button": 28, "content_width": 1280, "section_desktop": 80, "section_mobile": 40, "grid_gap": 24, "base_font": 16}
+}

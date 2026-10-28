@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "id": "neutral",
+  "name": "Cửa hàng trung tính",
+  "settings": {
+    "hero_title": "Tìm sản phẩm phù hợp với bạn.",
+    "hero_lede": "Khám phá bộ sưu tập, so sánh thông tin và chọn sản phẩm theo nhu cầu.",
+    "hero_badge": "Khám phá · Tìm hiểu · Lựa chọn",
+    "announce_before": "Bạn cần thêm thông tin?",
+    "announce_after": "Liên hệ cửa hàng trước khi đặt hàng.",
+    "video_section_limit": 8,
+    "posts_count": 5,
+    "sections": {
+      "van-de": {"enabled": true, "title": "Bạn đang tìm gì?", "lede": "Khám phá sản phẩm theo từng bộ sưu tập.", "eyebrow": "Danh mục", "link_text": "", "link_url": ""},
+      "san-pham": {"enabled": true, "title": "Khám phá sản phẩm", "lede": "Xem kỹ thông tin và lựa chọn trước khi đặt hàng.", "eyebrow": "", "link_text": "Xem tất cả sản phẩm", "link_url": "/shop/"},
+      "video": {"enabled": true, "title": "Xem để hiểu rõ hơn", "lede": "Video được cửa hàng chọn lọc và giới thiệu.", "eyebrow": "", "link_text": "Xem tất cả video", "link_url": "/videos/"},
+      "kien-thuc": {"enabled": true, "title": "Thông tin hữu ích", "lede": "Hướng dẫn và bài viết từ cửa hàng.", "eyebrow": "Góc chia sẻ", "link_text": "Tất cả bài viết", "link_url": "/knowledge/"},
+      "dat-hang": {"enabled": true, "title": "Đặt hàng thế nào?", "lede": "Đọc chính sách đã công bố trước khi thanh toán.", "eyebrow": "", "link_text": "", "link_url": ""}
+    },
+    "steps": [
+      {"title": "Tìm hiểu sản phẩm", "description": "Đọc mô tả, lựa chọn và tình trạng còn hàng của từng sản phẩm."},
+      {"title": "Kiểm tra giỏ hàng", "description": "Kiểm tra số lượng, địa chỉ nhận hàng và các chính sách đã công bố."},
+      {"title": "Hoàn tất đặt hàng", "description": "Chọn phương thức thanh toán đang hỗ trợ và lưu thông tin xác nhận đơn hàng."}
+    ]
+  },
+  "design": {"primary": "#235b4e", "primary_hover": "#184438", "heading": "#172b26", "text": "#33433d", "muted": "#66756e", "tile": "#ffffff", "soft": "#f0f5f2", "deep": "#173b31", "border": "#dce6df", "accent": "#ddb85c", "sale": "#a93736", "font_heading": "system", "font_body": "system", "radius_image": 16, "radius_button": 24, "content_width": 1280, "section_desktop": 72, "section_mobile": 40, "grid_gap": 24, "base_font": 16}
+}
